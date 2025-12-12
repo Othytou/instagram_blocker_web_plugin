@@ -30,7 +30,7 @@ A Chrome/Brave extension to block distracting Instagram content and take back co
 ## 🏗️ Project Structure
 
 ```
-block-instagram-content/
+instagram_blocker_web_plugin/
 ├── manifest.json       # Extension configuration
 ├── content.js          # Blocking script
 ├── icons/              # Extension icons
