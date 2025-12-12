@@ -1,0 +1,34 @@
+{
+	"manifest_version": 3,
+	"name": "Block Insta Content",
+	"version": "1.0.1",
+	"description": "Block access to message in Instagram Web, Next update is to block content",
+	"icons": {
+		"16": "icons/icon16.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	},
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "icons/icon16.png",
+			"48": "icons/icon48.png",
+			"128": "icons/icon128.png"
+		}
+	},
+	"permissions": [
+		"storage",
+		"activeTab"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"*://www.instagram.com/*"
+			],
+			"js": [
+				"content.js"
+			],
+			"run_at": "document_start"
+		}
+	]
+}
